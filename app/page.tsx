@@ -1,25 +1,25 @@
-'use client'
-import { Button } from '@/components/ui/button'
-import { Card, CardContent } from '@/components/ui/card'
-import { useToast } from "@/hooks/use-toast"
+'use client';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent } from '@/components/ui/card';
+import { useToast } from "@/hooks/use-toast";
 
 export default function Home() {
-  const { toast } = useToast()
+  const { toast } = useToast();
 
   const showToast = () => {
     toast({
       title: "Template Toast",
-      description: "This is a sample toast notification - customize it!",
-    })
-  }
+      description: "This is a sample toast notification - customize it!"
+    });
+  };
 
   return (
     <div className="min-h-full">
       {/* 
-        TEMPLATE SECTION: Hero
-        This is a template hero section - replace with your own content
-        Feel free to change layout, styling, and content completely
-      */}
+         TEMPLATE SECTION: Hero
+         This is a template hero section - replace with your own content
+         Feel free to change layout, styling, and content completely
+        */}
       <section className="container mx-auto px-4 pt-24 pb-20">
         <div className="max-w-[800px] mx-auto text-center">
           <h1 className="text-5xl font-bold tracking-tight lg:text-6xl">
@@ -38,10 +38,10 @@ export default function Home() {
       </section>
 
       {/* 
-        TEMPLATE SECTION: Features
-        This demonstrates a card layout - replace with your own content
-        Consider different layouts like grids, lists, or custom components
-      */}
+         TEMPLATE SECTION: Features
+         This demonstrates a card layout - replace with your own content
+         Consider different layouts like grids, lists, or custom components
+        */}
       <section className="container mx-auto px-4 py-20">
         <div className="grid md:grid-cols-3 gap-8 max-w-[1200px] mx-auto">
           <Card>
@@ -62,7 +62,7 @@ export default function Home() {
           </Card>
           <Card>
             <CardContent className="pt-6">
-              <h3 className="text-xl font-semibold mb-3">Sample Card 3</h3>
+              <h3 className='text-3xl'>Sample Card 3</h3>
               <p className="text-muted-foreground leading-relaxed">
                 Use the chat interface to transform this template into your unique design.
               </p>
@@ -72,9 +72,9 @@ export default function Home() {
       </section>
 
       {/* 
-        TEMPLATE SECTION: Call to Action
-        This is a simple CTA section - customize or replace as needed
-      */}
+         TEMPLATE SECTION: Call to Action
+         This is a simple CTA section - customize or replace as needed
+        */}
       <section className="container mx-auto px-4 py-20">
         <div className="max-w-[800px] mx-auto text-center">
           <h2 className="text-3xl font-bold tracking-tight mb-6">
@@ -88,6 +88,6 @@ export default function Home() {
           </Button>
         </div>
       </section>
-    </div>
-  )
+    </div>);
+
 }
